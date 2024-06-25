@@ -1851,7 +1851,8 @@ textarea {
         margin-right: 10px;
     }
 }
-.single_comment_area .comment-wrapper .comment-content .comment-meta a {
+
+.single_comment_area .comment-wrapper {
     display: inline-block;
     color: #081f3e;
     font-size: 14px;
@@ -1865,6 +1866,20 @@ textarea {
         font-size: 12px;
     }
 }
+
+@media (max-width: 540px) {
+    .single_comment_area .comment-wrapper .comment-author img {
+        height: 300px;
+        width: 300px;
+    }
+}
+
+@media (max-width: 540px) {
+    .single_comment_area .comment-wrapper {
+        flex-direction: column;
+    }
+}
+
 .single_comment_area .comment-wrapper .comment-content p {
     font-size: 14px;
     margin-bottom: 0;
